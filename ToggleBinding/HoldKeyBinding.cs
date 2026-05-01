@@ -4,7 +4,6 @@ using OpenTabletDriver.Plugin.Attributes;
 
 namespace ToggleBinding;
 
-[PluginIgnore]
 public class HoldKeyBinding : IBinding
 {
     [Property(nameof(DefaultKey))]

@@ -4,7 +4,6 @@ using OpenTabletDriver.Plugin.Attributes;
 
 namespace ToggleBinding;
 
-[PluginIgnore]
 public class ToggleKeyBinding : IBinding
 {
     // tracks the current state for toggling between keys
