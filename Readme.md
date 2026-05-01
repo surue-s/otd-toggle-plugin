@@ -23,7 +23,7 @@ sudo pacman -S xdotool dotnet-sdk
 ## Build
 
 ```bash
-git clone https://github.com/yourname/otd-toggle-plugin
+git clone https://github.com/surue-s/otd-toggle-plugin
 cd otd-toggle-plugin/ToggleBinding
 
 dotnet add package OpenTabletDriver.Plugin
