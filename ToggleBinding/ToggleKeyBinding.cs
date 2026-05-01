@@ -1,10 +1,11 @@
 using System.Diagnostics;
 using OpenTabletDriver.Plugin;
 using OpenTabletDriver.Plugin.Attributes;
+using OpenTabletDriver.Plugin.Tablet;
 
 namespace ToggleBinding;
 
-public class ToggleKeyBinding : IBinding
+public class ToggleKeyBinding : IStateBinding
 {
     // tracks the current state for toggling between keys
     private bool _isKeyAActive = true;
@@ -17,7 +18,7 @@ public class ToggleKeyBinding : IBinding
     [ToolTip("the second key to send on press (e.g., 'e' for eraser)")]
     public string KeyB { get; set; } = "e";
 
-    public void Press()
+    public void Press(TabletReference tablet, IDeviceReport report)
     {
         // determine which key to send based on current state
         string keyToSend = _isKeyAActive ? KeyA : KeyB;
@@ -49,7 +50,7 @@ public class ToggleKeyBinding : IBinding
         _isKeyAActive = !_isKeyAActive;
     }
 
-    public void Release()
+    public void Release(TabletReference tablet, IDeviceReport report)
     {
         // nothing happens on release for toggle binding
     }

@@ -1,10 +1,11 @@
 using System.Diagnostics;
 using OpenTabletDriver.Plugin;
 using OpenTabletDriver.Plugin.Attributes;
+using OpenTabletDriver.Plugin.Tablet;
 
 namespace ToggleBinding;
 
-public class HoldKeyBinding : IBinding
+public class HoldKeyBinding : IStateBinding
 {
     [Property(nameof(DefaultKey))]
     [ToolTip("the key to send when held button is released (e.g., 'b' for brush)")]
@@ -14,7 +15,7 @@ public class HoldKeyBinding : IBinding
     [ToolTip("the key to send while holding the button (e.g., 'e' for eraser)")]
     public string HoldKey { get; set; } = "e";
 
-    public void Press()
+    public void Press(TabletReference tablet, IDeviceReport report)
     {
         try
         {
@@ -40,7 +41,7 @@ public class HoldKeyBinding : IBinding
         }
     }
 
-    public void Release()
+    public void Release(TabletReference tablet, IDeviceReport report)
     {
         try
         {
