@@ -41,9 +41,9 @@ public class ToggleKeyBinding : IBinding
             process.Start();
             process.WaitForExit();
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            // error handling will be added in prompt 6
+            Log.Write(nameof(ToggleKeyBinding), $"failed to send key: {ex.Message}", LogLevel.Error);
         }
 
         // toggle the state for next press

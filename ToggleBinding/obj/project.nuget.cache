@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qaveS7shaA0=",
+  "dgSpecHash": "lOyDQbtl6iM=",
   "success": true,
   "projectFilePath": "/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/ToggleBinding.csproj",
   "expectedPackageFiles": [
+    "/home/surue/.nuget/packages/jetbrains.annotations/2025.2.4/jetbrains.annotations.2025.2.4.nupkg.sha512",
+    "/home/surue/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512",
+    "/home/surue/.nuget/packages/opentabletdriver.plugin/0.6.7/opentabletdriver.plugin.0.6.7.nupkg.sha512",
+    "/home/surue/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "/home/surue/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
   ],
   "logs": []

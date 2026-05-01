@@ -1,0 +1,13 @@
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/bin/Debug/net10.0/ToggleBinding.deps.json
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/bin/Debug/net10.0/ToggleBinding.dll
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/bin/Debug/net10.0/ToggleBinding.pdb
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/ToggleBinding.csproj.AssemblyReference.cache
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/ToggleBinding.GeneratedMSBuildEditorConfig.editorconfig
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/ToggleBinding.AssemblyInfoInputs.cache
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/ToggleBinding.AssemblyInfo.cs
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/ToggleBinding.csproj.CoreCompileInputs.cache
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/ToggleBinding.sourcelink.json
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/ToggleBinding.dll
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/refint/ToggleBinding.dll
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/ToggleBinding.pdb
+/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/obj/Debug/net10.0/ref/ToggleBinding.dll

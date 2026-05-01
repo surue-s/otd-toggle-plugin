@@ -35,9 +35,9 @@ public class HoldKeyBinding : IBinding
             process.Start();
             process.WaitForExit();
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            // error handling will be added in prompt 6
+            Log.Write(nameof(HoldKeyBinding), $"failed to send hold key: {ex.Message}", LogLevel.Error);
         }
     }
 
@@ -61,9 +61,9 @@ public class HoldKeyBinding : IBinding
             process.Start();
             process.WaitForExit();
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            // error handling will be added in prompt 6
+            Log.Write(nameof(HoldKeyBinding), $"failed to send default key: {ex.Message}", LogLevel.Error);
         }
     }
 }
