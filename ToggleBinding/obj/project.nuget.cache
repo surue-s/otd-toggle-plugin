@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qaveS7shaA0=",
+  "success": true,
+  "projectFilePath": "/home/surue/Desktop/Projects/otd-toggle-plugin/ToggleBinding/ToggleBinding.csproj",
+  "expectedPackageFiles": [
+    "/home/surue/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
