@@ -1,1 +1,36 @@
-/Debug
+# build outputs
+**/bin/
+**/obj/
+
+# test results and coverage
+TestResults/
+**/*.trx
+**/*.coverage
+**/*.coveragexml
+coverage/
+
+# nuget packages and lock files (library/plugin repo)
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+
+# rider / visual studio / vs code user files
+.idea/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# vscode local workspace settings
+.vscode/
+
+# os/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# logs
+*.log
