@@ -32,7 +32,7 @@ A plugin for [OpenTabletDriver](https://opentabletdriver.net/) that adds two new
  
 ## How to Install the Plugin
  
-First download the zip file from the Releases section on this page. Open the zip and find the file called **ToggleBinding.dll** inside.
+First download the  **ToggleBinding.dll** from the latest release.
  
 Then follow the steps for your system below.
  
