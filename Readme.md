@@ -5,6 +5,7 @@ A plugin for [OpenTabletDriver](https://opentabletdriver.net/) that adds two new
 - **Toggle Key Binding** — press once for Key A, press again for Key B. Perfect for toggling between Brush (`B`) and Eraser (`E`) in Clip Studio Paint.
 - **Hold Key Binding** — hold button to temporarily switch to Key B, release to return to Key A. Like a momentary eraser switch.
 
+Note that the current version does not work inside wine bottles. Working on fix. 
 ---
 
 ## What You Need
