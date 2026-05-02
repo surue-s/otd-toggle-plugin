@@ -8,6 +8,7 @@ A plugin for [OpenTabletDriver](https://opentabletdriver.net/) that adds two new
 Note that the current version does not work inside wine bottles. Working on fix. 
 ---
 
+<<<<<<< HEAD
 ## What You Need
  
 - **OpenTabletDriver** must be installed. You can get it at https://opentabletdriver.net
@@ -29,6 +30,19 @@ Note that the current version does not work inside wine bottles. Working on fix.
  
 > **Note for Windows and Mac users:** xdotool does not work on Windows or Mac. Because of this the plugin will not send keys on those systems right now. This is a known limitation and a fix is planned. For now this plugin only fully works on Linux.
  
+=======
+## Requirements
+
+- OpenTabletDriver 0.6.x
+- .NET SDK 8.0
+- `xdotool` installed on your system
+
+- OpenTabletDriver 0.6.x or later
+- .NET SDK 8.0
+
+This plugin now uses OpenTabletDriver's built-in virtual keyboard API, so no external key-sending utilities (like `xdotool`) are required.
+
+>>>>>>> e9d9bd7 (chore(release): v1.1.0 — use IVirtualKeyboard; update README)
 ---
  
 ## How to Install the Plugin
@@ -38,11 +52,65 @@ First download the  **ToggleBinding.dll** from the latest release.
 Then follow the steps for your system below.
  
 ---
+<<<<<<< HEAD
  
 ### Linux
  
 **Option 1: Use the install command**
  
+Open a terminal and run:
+```
+otd installplugin /path/to/ToggleBinding.dll
+```
+Replace `/path/to/ToggleBinding.dll` with the actual location of the file on your computer.
+ 
+Then restart OpenTabletDriver:
+```
+=======
+
+## Install
+
+```bash
+# Install via the CLI helper (if available)
+otd installplugin ./bin/Release/net8.0/ToggleBinding.dll
+
+# Or copy the DLL directly into your user plugins folder and restart the daemon
+cp bin/Release/net8.0/ToggleBinding.dll ~/.config/OpenTabletDriver/Plugins/ToggleBinding/ToggleBinding.dll
+>>>>>>> e9d9bd7 (chore(release): v1.1.0 — use IVirtualKeyboard; update README)
+systemctl --user restart opentabletdriver.service
+```
+ 
+**Option 2: Copy the file manually**
+ 
+If the install command does not work you can copy the file directly. Open a terminal and run:
+````markdown
+# OTD Toggle Binding Plugin
+
+A plugin for [OpenTabletDriver](https://opentabletdriver.net/) that adds two new binding types:
+
+- **Toggle Key Binding** — press once for Key A, press again for Key B. Perfect for toggling between Brush (`B`) and Eraser (`E`) in Clip Studio Paint.
+- **Hold Key Binding** — hold button to temporarily switch to Key B, release to return to Key A. Like a momentary eraser switch.
+
+---
+
+## What You Need
+
+- **OpenTabletDriver** must be installed. You can get it at https://opentabletdriver.net
+
+---
+
+## How to Install the Plugin
+
+First download the  **ToggleBinding.dll** from the latest release.
+
+Then follow the steps for your system below.
+
+---
+
+### Linux
+
+**Option 1: Use the install command**
+
 Open a terminal and run:
 ```
 otd installplugin /path/to/ToggleBinding.dll
@@ -118,7 +186,9 @@ Create a new folder inside called `TogglePlugin` and paste the `ToggleBinding.dl
 **Toggle Key Binding** means press once to switch to one tool and press again to switch back.
  
 **Hold Key Binding** means hold the button to temporarily use another tool and let go to return to the previous one.
- 
+
+This plugin works on Linux, Mac and Windows. It also works inside Wine and Bottles if you use Clip Studio Paint through them on Linux.
+
 ### Recommended Setup for Clip Studio Paint
  
 | Setting | Value |
@@ -126,7 +196,7 @@ Create a new folder inside called `TogglePlugin` and paste the `ToggleBinding.dl
 | Key A | `b` (this is the brush tool) |
 | Key B | `e` (this is the eraser tool) |
  
-This is the same way the official tablet drivers work.
+This is the same way the official tablet drivers work. If you use the Hold Key Binding, holding the button switches to eraser and letting go brings back the brush. This feels the most natural for drawing.
  
 ---
  
@@ -145,3 +215,4 @@ On Windows open the Plugins folder at `%APPDATA%\OpenTabletDriver\Plugins\` and 
 ## License
  
 MIT
+````
