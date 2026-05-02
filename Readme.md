@@ -4,8 +4,7 @@ A plugin for [OpenTabletDriver](https://opentabletdriver.net/) that adds two new
 
 - **Toggle Key Binding** — press once for Key A, press again for Key B. Perfect for toggling between Brush (`B`) and Eraser (`E`) in Clip Studio Paint.
 - **Hold Key Binding** — hold button to temporarily switch to Key B, release to return to Key A. Like a momentary eraser switch.
-
-Note that the current version does not work inside wine bottles. Working on fix. 
+---
 ---
 
 <<<<<<< HEAD
@@ -13,8 +12,9 @@ Note that the current version does not work inside wine bottles. Working on fix.
 =======
 >>>>>>> 6ef8eb9 (chore: sync README from remote)
 ## What You Need
- 
+
 - **OpenTabletDriver** must be installed. You can get it at https://opentabletdriver.net
+<<<<<<< HEAD
 - **xdotool** must be installed on Linux. This is a small tool that sends keyboard presses to your computer. Install it with the command for your system:
   On Arch Linux or CachyOS:
   ```
@@ -49,24 +49,31 @@ This plugin now uses OpenTabletDriver's built-in virtual keyboard API, so no ext
 >>>>>>> e9d9bd7 (chore(release): v1.1.0 — use IVirtualKeyboard; update README)
 =======
 >>>>>>> 6ef8eb9 (chore: sync README from remote)
+=======
+
+>>>>>>> ef08e0f (fix(readme): remove xdotool mentions; add cross-platform and bottles support note)
 ---
- 
+
 ## How to Install the Plugin
- 
+
 First download the  **ToggleBinding.dll** from the latest release.
- 
+
 Then follow the steps for your system below.
- 
+
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 6ef8eb9 (chore: sync README from remote)
  
+=======
+
+>>>>>>> ef08e0f (fix(readme): remove xdotool mentions; add cross-platform and bottles support note)
 ### Linux
- 
+
 **Option 1: Use the install command**
- 
+
 Open a terminal and run:
 ```
 otd installplugin /path/to/ToggleBinding.dll
