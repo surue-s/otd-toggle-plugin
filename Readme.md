@@ -144,10 +144,3 @@ On Windows open the Plugins folder at `%APPDATA%\OpenTabletDriver\Plugins\` and 
 ## License
  
 MIT
-
-
----
-
-## License
-
-MIT
