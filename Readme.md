@@ -13,10 +13,10 @@ A plugin for [OpenTabletDriver](https://opentabletdriver.net/) that adds two new
 - .NET SDK 8.0
 - `xdotool` installed on your system
 
-```bash
-# CachyOS / Arch
-sudo pacman -S xdotool dotnet-sdk
-```
+- OpenTabletDriver 0.6.x or later
+- .NET SDK 8.0
+
+This plugin now uses OpenTabletDriver's built-in virtual keyboard API, so no external key-sending utilities (like `xdotool`) are required.
 
 ---
 
@@ -40,7 +40,11 @@ bin/Release/net8.0/ToggleBinding.dll
 ## Install
 
 ```bash
+# Install via the CLI helper (if available)
 otd installplugin ./bin/Release/net8.0/ToggleBinding.dll
+
+# Or copy the DLL directly into your user plugins folder and restart the daemon
+cp bin/Release/net8.0/ToggleBinding.dll ~/.config/OpenTabletDriver/Plugins/ToggleBinding/ToggleBinding.dll
 systemctl --user restart opentabletdriver.service
 ```
 
@@ -73,9 +77,9 @@ systemctl --user restart opentabletdriver.service
 
 ## Notes
 
-- Make sure `xdotool` is installed, otherwise key sending will fail
-- The **Hold Key Binding** is closer to how the official XP Pen driver handles the eraser switch
-- Pen tip blocking while holding a button is a hardware/firmware behavior — if it persists, it may need to be addressed at the OTD filter level
+- The plugin uses OpenTabletDriver's `IVirtualKeyboard` so no external key-sending tools are required.
+- The **Hold Key Binding** mirrors momentary behavior (hold for eraser, release for brush).
+- If keys are still not reaching apps inside Flatpak/Bottles, check focus and Flatpak portal permissions; we can add runtime logging to the bindings to diagnose.
 
 ---
 
