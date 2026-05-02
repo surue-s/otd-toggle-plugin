@@ -9,6 +9,9 @@ Note that the current version does not work inside wine bottles. Working on fix.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6ef8eb9 (chore: sync README from remote)
 ## What You Need
  
 - **OpenTabletDriver** must be installed. You can get it at https://opentabletdriver.net
@@ -30,6 +33,7 @@ Note that the current version does not work inside wine bottles. Working on fix.
  
 > **Note for Windows and Mac users:** xdotool does not work on Windows or Mac. Because of this the plugin will not send keys on those systems right now. This is a known limitation and a fix is planned. For now this plugin only fully works on Linux.
  
+<<<<<<< HEAD
 =======
 ## Requirements
 
@@ -43,6 +47,8 @@ Note that the current version does not work inside wine bottles. Working on fix.
 This plugin now uses OpenTabletDriver's built-in virtual keyboard API, so no external key-sending utilities (like `xdotool`) are required.
 
 >>>>>>> e9d9bd7 (chore(release): v1.1.0 — use IVirtualKeyboard; update README)
+=======
+>>>>>>> 6ef8eb9 (chore: sync README from remote)
 ---
  
 ## How to Install the Plugin
@@ -53,6 +59,9 @@ Then follow the steps for your system below.
  
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6ef8eb9 (chore: sync README from remote)
  
 ### Linux
  
@@ -66,6 +75,7 @@ Replace `/path/to/ToggleBinding.dll` with the actual location of the file on you
  
 Then restart OpenTabletDriver:
 ```
+<<<<<<< HEAD
 =======
 
 ## Install
@@ -77,12 +87,68 @@ otd installplugin ./bin/Release/net8.0/ToggleBinding.dll
 # Or copy the DLL directly into your user plugins folder and restart the daemon
 cp bin/Release/net8.0/ToggleBinding.dll ~/.config/OpenTabletDriver/Plugins/ToggleBinding/ToggleBinding.dll
 >>>>>>> e9d9bd7 (chore(release): v1.1.0 — use IVirtualKeyboard; update README)
+=======
+>>>>>>> 6ef8eb9 (chore: sync README from remote)
 systemctl --user restart opentabletdriver.service
 ```
  
 **Option 2: Copy the file manually**
  
 If the install command does not work you can copy the file directly. Open a terminal and run:
+<<<<<<< HEAD
+````markdown
+# OTD Toggle Binding Plugin
+
+A plugin for [OpenTabletDriver](https://opentabletdriver.net/) that adds two new binding types:
+
+- **Toggle Key Binding** — press once for Key A, press again for Key B. Perfect for toggling between Brush (`B`) and Eraser (`E`) in Clip Studio Paint.
+- **Hold Key Binding** — hold button to temporarily switch to Key B, release to return to Key A. Like a momentary eraser switch.
+
+---
+
+## What You Need
+
+- **OpenTabletDriver** must be installed. You can get it at https://opentabletdriver.net
+
+---
+
+## How to Install the Plugin
+
+First download the  **ToggleBinding.dll** from the latest release.
+
+Then follow the steps for your system below.
+
+---
+
+### Linux
+
+**Option 1: Use the install command**
+
+Open a terminal and run:
+```
+otd installplugin /path/to/ToggleBinding.dll
+```
+Replace `/path/to/ToggleBinding.dll` with the actual location of the file on your computer.
+ 
+Then restart OpenTabletDriver:
+```
+systemctl --user restart opentabletdriver.service
+```
+ 
+**Option 2: Copy the file manually**
+ 
+If the install command does not work you can copy the file directly. Open a terminal and run:
+```
+mkdir -p ~/.config/OpenTabletDriver/Plugins/TogglePlugin
+cp /path/to/ToggleBinding.dll ~/.config/OpenTabletDriver/Plugins/TogglePlugin/
+```
+Then restart OpenTabletDriver:
+```
+systemctl --user restart opentabletdriver.service
+```
+ 
+---
+ 
 ````markdown
 # OTD Toggle Binding Plugin
 
@@ -216,3 +282,4 @@ On Windows open the Plugins folder at `%APPDATA%\OpenTabletDriver\Plugins\` and 
  
 MIT
 ````
+On Windows open the Plugins folder at `%APPDATA%\OpenTabletDriver\Plugins\` and delete the `TogglePlugin` folder. Then restart OpenTabletDriver.
